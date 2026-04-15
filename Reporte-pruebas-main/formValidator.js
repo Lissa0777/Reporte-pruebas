@@ -1,23 +1,23 @@
-function validarRegistro(nombre, edad, password, confirmarPassword) {
+function validarFormulario() {
+    const nombre = document.getElementById('nombre').value;
+    const edad = parseInt(document.getElementById('edad').value);
+    const pass = document.getElementById('password').value;
+    const confirmPass = document.getElementById('confirmPassword').value;
 
-    // Validar nombre (mínimo 3 caracteres)
+    // Validar nombre
     if (nombre.length < 3) {
-        console.log("El nombre debe tener al menos 3 caracteres");
-        return false;
+        return "Nombre muy corto";
     }
 
-    // Validar edad (entre 18 y 99)
+    // Validar edad
     if (edad < 18 || edad > 99) {
-        console.log("Edad no válida. Debe ser mayor de edad");
-        return false;
+        return "Edad no permitida";
     }
 
-    // Validar contraseñas iguales
-    if (password !== confirmarPassword) {
-        console.log("Las contraseñas no coinciden");
-        return false;
+    // Validar contraseñas
+    if (pass !== confirmPass) {
+        return "Las contraseñas no coinciden";
     }
 
-    console.log("Registro exitoso");
-    return true;
+    return "Registro Exitoso";
 }
