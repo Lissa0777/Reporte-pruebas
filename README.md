@@ -1,9 +1,3 @@
-Perfecto, Edwin. He ajustado el `README.md` para que refleje que los aprendices deben conectar su repositorio local al tuyo mediante `git remote add origin`, asumiendo que ya tienen los archivos base o que están iniciando el entorno.
-
-Aquí tienes el contenido del archivo **README.md**:
-
----
-
 # 🛠️ Taller Técnico: QA & Testing en JavaScript
 **Instructor:** Edwin Rozo Gómez  
 **Ficha:** 3144615  
